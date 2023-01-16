@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "92a70dec-e244-4212-b2f4-500120e6eda6",
+		"name": "Newsletter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth_admin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "ivyjean",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "password2",
+							"value": "asdfjkl",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "admin",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth_user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "ivyjean",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "password2",
+							"value": "asdfjkl",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "asdfjkl",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "diligivyjean+1@gmail.com",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reg",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "test123",
+							"type": "default"
+						},
+						{
+							"key": "password2",
+							"value": "asdfjkl;",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "asdfjkl;",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/reg",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_count_reg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/regpage",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"regpage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unsub_view",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/unsub",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"unsub"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_subscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id2",
+							"value": "1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/subscribe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_unsub",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/unsubsucc?id2=1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"unsubsucc"
+					],
+					"query": [
+						{
+							"key": "id2",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_view_info_sort",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/sort",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sort"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/signout",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_news",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/news",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsletter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/newsletter",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"newsletter"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
