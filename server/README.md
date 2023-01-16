@@ -39,3 +39,10 @@ Node.js is a free, open-sourced JavaScript run-time environment that lets develo
 
 1. Install `Postman` 
 2. Inside the postman import `Newletter.postman_collection.json`
+
+
+## DB possible problem
+
+1. Problem in accesing your server try to run this and change the password you are using `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'asdfjkl';`
+
+   
